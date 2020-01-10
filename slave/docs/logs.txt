@@ -1,0 +1,30 @@
+
+v0.1 @ ?? - Diego
+    cria queueobserver
+    cria queue
+
+v0.2 @ 15/06/2019 - Diego
+
+    * cria classe custom para threads como metodo para finalizar. qualquer
+    worker pode ser finalizado manualmente usando o metodo worker.terminate().
+
+    * cria worker randomsleep, o mesmo tem como finalidade criar processamento
+    com intervalos de tempo predeterminados aleatoriamente usando sleep. sera
+    usando para testes, para aperfeçoar a queue e queueobserver.
+
+    * remove conteudo desnecessario e não mais utilizado do projeto.
+    * adiciona metodo para retornar percetual do processamento da queue.
+
+v0.3 @ 17/06/2019 - Diego
+
+    * cria estrutura base de servidor socket, para comunicacao entre queues.
+    * adiciona suporte a multiplas conexoes no servidor.
+
+v0.4 @ 19/06/2019 - Diego
+
+    * inicia implementacao de exeptions no protocolo de rede para dados de i/o.
+    * implementa finalizacao de conexoes/threads durante execucao. quando um
+    servidor é finalizado, é enviado um aviso a todas as conexoes e as mesmas 
+    são finalizadas. apos o fechamento das conexoes o thread é terminado.
+
+    * reorganiza estruturas do modulo network (sockets)
