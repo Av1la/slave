@@ -28,3 +28,6 @@ v0.4 @ 19/06/2019 - Diego
     são finalizadas. apos o fechamento das conexoes o thread é terminado.
 
     * reorganiza estruturas do modulo network (sockets)
+
+
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.3
