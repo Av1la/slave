@@ -2,15 +2,16 @@ import socket
 from slave.app.thread import ThreadBase
 
 
-"""
-    Processo de Cliente.
 
-    Utilizado pela Queue para criar uma conexao com a QueueMaster (Gestora
-    de queues.).
-
-    ** nao implementado.
-"""
 class ClientProtocol(ThreadBase):
+    """
+        Processo de Cliente.
+
+        Utilizado pela Queue para criar uma conexao com a QueueMaster (Gestora
+        de queues.).
+
+        ** nao implementado.
+    """
 
     def __init__(self, host, port):
         ThreadBase.__init__(self)

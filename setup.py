@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="slave-nine",
-    version="0.0.1",
+    name="slave",
+    version="0.0.2",
     author="Diego Rodrigues",
     author_email="di3go.r0drigues@gmail.com",
     description="A slave package",

@@ -16,7 +16,7 @@ para aquela informacao.
 
 - Serializer 
 
-O serializer é resposavel pela instancia de um worker. O serializer busca as 
+O serializer é resposavel por instanciar um worker. O serializer busca as 
 informacoes, estejam elas em um banco ou em um arquivo. As informacoes são 
 agrupas e apartir disso o worker é instanciado. Obviamente cada worker devera
 possuir o seu proprio serializer, levando em consideracao que cada worker pos-
