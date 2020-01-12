@@ -65,15 +65,15 @@ class ProxySerializer():
         return False
 
 
-    """
-        Retorna um proxy diferente dos ultimos proxies informados.
-        A quantidade até que o proxy possa ser utilizado novamente é informado
-        no parametro max_cache.
-
-        Diego @ 23/06/2019
-    """
     def get_intelligent_random(self, max_cache=10):
+        """
+            Retorna um proxy diferente dos ultimos proxies informados.
+            A quantidade até que o proxy possa ser utilizado novamente é informado
+            no parametro max_cache.
 
+            Diego @ 23/06/2019
+        """
+        
         # caso a lista de proxies seja menor que o maximo de cache permitido
         if not len(self.proxies) >= max_cache:
             return self.get_random()

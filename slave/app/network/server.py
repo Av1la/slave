@@ -10,14 +10,14 @@ from slave.app.network.utility import ReadNetworkResponse
 from slave.app.network.exceptions import BadTerminateSocketThread
 
 
-"""
-    Processo de Servidor.
 
-    O processo abaixo cria um servidor para gerenciamento de queues.
-    A partir do servidor é possivel criar/gerir/consultar queues.
-"""
 class ServerProtocol(ThreadBase):
+    """
+        Processo de Servidor.
 
+        O processo abaixo cria um servidor para gerenciamento de queues.
+        A partir do servidor é possivel criar/gerir/consultar queues.
+    """
 
     def __init__(self, host, port):
         ThreadBase.__init__(self)
@@ -67,14 +67,15 @@ class ServerProtocol(ThreadBase):
                 pass
 
 
-"""
-    ServerConnectionProtocol representa uma conexao ativa com o sistema.
 
-    Gerencia uma conexão de um cliente com o servidor, nessa arquitetura é
-    a interface entre o cliente e o servidor. É o meio de conexao do servidor
-    como o cliente.
-"""
 class ServerConnectionProtocol(ThreadBase):
+    """
+        ServerConnectionProtocol representa uma conexao ativa com o sistema.
+
+        Gerencia uma conexão de um cliente com o servidor, nessa arquitetura é
+        a interface entre o cliente e o servidor. É o meio de conexao do servidor
+        como o cliente.
+    """
 
     def __init__(self, socket, addr):
         ThreadBase.__init__(self)

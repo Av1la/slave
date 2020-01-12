@@ -6,9 +6,8 @@ class InvalidRequestError(Exception):
 
 
 class InvalidResponseError(Exception):
-    """ recebido uma resposta invalida, conforme o padrao esperado pelo proto-
-    colo.
-    """
+    """ recebido uma resposta invalida, conforme o padrao esperado pelo 
+    protocolo. """
     pass
 
 

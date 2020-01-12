@@ -129,20 +129,17 @@ class Queue(Thread):
             raise TypeError('o proxy manager informado é invalido.')
 
 
-    """
-        quando o processamento for finalizado é possivel obter a duracao
-        por meio deste metodo.
-    """
+
     def get_processing_time(self):
+        """ quando o processamento for finalizado é possivel obter a duracao
+        por meio deste metodo. """
         if self.finished:
             return (self.finished_at - self.started_at)
         return None
 
 
-    """
-        retorna uma lista de workers em atividade
-    """
     def get_active_workers(self):
+        """ retorna uma lista de workers em atividade """
 
         active_workers = []
 
